@@ -32,6 +32,7 @@ jobs:
           - cxx: clang++-10
             other_pkgs: clang-10
           - cxx: clang++-10
+            std: 14
             other_pkgs: clang-10
             surrogates: ON
 
