@@ -20,6 +20,7 @@ jobs:
           - clang++-10
         build_type: [Debug, Release]
         std: [14]
+        surrogates: [OFF]
         include:
         # cannot be installed on ubuntu-20.04 be default?
 #          - cxx: g++-6
@@ -32,7 +33,7 @@ jobs:
             other_pkgs: clang-10
           - cxx: clang++-10
             other_pkgs: clang-10
-            surrogates: 1
+            surrogates: ON
 
     steps:
     - uses: actions/checkout@v2
